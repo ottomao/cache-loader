@@ -1,6 +1,6 @@
 {
-  "name": "cache-loader",
-  "version": "1.2.3",
+  "name": "cache-loader-with-compare",
+  "version": "0.0.1",
   "description": "Caches the result of following loaders on disk.",
   "author": "Tobias Koppers @sokra",
   "license": "MIT",
@@ -61,9 +61,7 @@
   "peerDependencies": {
     "webpack": "^2.0.0 || ^3.0.0 || ^4.0.0"
   },
-  "repository": "https://github.com/webpack-contrib/cache-loader.git",
-  "bugs": "https://github.com/webpack-contrib/cache-loader/issues",
-  "homepage": "https://github.com/webpack-contrib/cache-loader",
+  "repository": "https://github.com/ottomao/cache-loader.git",
   "pre-commit": "lint-staged",
   "lint-staged": {
     "*.js": [

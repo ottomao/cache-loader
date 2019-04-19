@@ -1,3 +1,7 @@
+#### cache-loader-with-compare
+
+forked from https://github.com/LukeSheard/cache-loader --> https://github.com/webpack-contrib/cache-loader/
+
 [![npm][npm]][npm-url]
 [![node][node]][node-url]
 [![deps][deps]][deps-url]
