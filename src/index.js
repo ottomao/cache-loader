@@ -122,7 +122,7 @@ function write(key, data, callback) {
 }
 
 function read(key, callback) {
-  this.fs.readFile(key, 'utf-8', (err, content) => {
+  fs.readFile(key, 'utf-8', (err, content) => {
     if (err) {
       callback(err);
       return;
@@ -138,7 +138,7 @@ function read(key, callback) {
 }
 
 function generate(depFileName, callback) {
-  this.fs.stat(depFileName, (err, stats) => {
+  fs.stat(depFileName, (err, stats) => {
     if (err) {
       callback(err);
       return;
@@ -163,7 +163,7 @@ function generate(depFileName, callback) {
 }
 
 function compare(data, callback) {
-  this.fs.stat(data.path, (statErr, stats) => {
+  fs.stat(data.path, (statErr, stats) => {
     if (statErr) {
       callback(statErr);
       return;

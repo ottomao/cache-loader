@@ -20,7 +20,7 @@ const generate = (depPath, callback) => {
 }
 
 const compare = (data, callback) => {
-  return fs.readFile(data.depPath, (err, content) => {
+  return fs.readFile(data.path, (err, content) => {
     if (err) {
       return callback(err);
     } else if (digest(content) !== data.digest) {
